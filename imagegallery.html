@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="CSS/imagegallery.css">
+    <script type="text/javascript" src="JS/imagegallery.js" async></script>
+</head>
+
+<body id="body">
+    <header>
+        <img class="logo" src="Images/Logo_name.png" alt="UNREAL" height="90px" width="150px" style="margin-left: 4%; margin-top: 0.4%;">
+        <nav>
+            <ul class="container">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="quiz/index.html">Quiz</a></li>
+                <li><a href="Buy Product.html">Product</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="About_us/AboutUs.html">About Us</a></li>
+                <li><a href="../Buy Product.html" onclick="product_cart()">cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    
+    <div id="colorbuttons">
+        
+        <p>Colour Theme
+        <button id="style1" class="buttons">
+            
+        </button>
+        <button id="style2" class="buttons">
+            
+        </button>
+        <button id="style3" class="buttons">
+            
+        </button>
+        <button id="style4" class="buttons">
+            Random colour
+        </button>
+        </p>
+    </div>
+
+    <div id="sizebuttons">
+        <p>Font size
+        <button id="size1" class="buttons">
+            A
+        </button>
+        <button id="size2" class="buttons">
+            A
+        </button>
+        <button id="size3" class="buttons">
+            A
+        </button>
+        </p>
+    </div>    
+
+
+    <div class="full-img" id="fullImgBox">
+        <img src="Images/student4images/worldwar2.jpg" id="fullImg">
+        <p id="text">test</p>
+        <span onclick="closeFullImg()">X</span>
+    </div> 
+
+
+    <div class="imagegallery">
+        <div class="image_a">
+            <img src="Images/student4images/worldwar2.jpg" datavalue="a" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_1">World War II</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/AI.jpg" datavalue="b" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_2">Artificial intelligence</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/Anuradhapura.jpg" datavalue="c" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_3">Anuradhapura Kingdom</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/bermuda.jpg" datavalue="d" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_4">Bermuda Triangle</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/bluewhale.jpg" datavalue="e" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_5">Blue whale</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/mariana.jpg" datavalue="f" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_6">Mariana Trench</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/marsplanet.jpg" datavalue="g" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_7">Mars</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/sigiriya.jpg" datavalue="h" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_8">Sigiriya</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/DNA.jpg" datavalue="i" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_9">DNA</p>
+        </div>
+        <div class="image_a">
+            <img src="Images/student4images/apollo.jpg" datavalue="j" onmouseover="handleImageClick(this.src, this.getAttribute('datavalue'))">
+            <p class="text_a" id="text_10">Apollo 11</p>
+        </div>
+    </div>
+
+    <p style="text-align: center; font-size: 30px;font-weight: bold;transform: translateY(-100%);">
+        <a href="Editor pages/editors_4.html" class="editor" style="text-decoration: none;padding: 5px; color: white;border: inset 5px red;border-radius: 10px;transition: 0.5s ease;">EDITOR</a></p>
+      
+
+    <footer>
+        <div class="section1">
+            <h2>About Us</h2>
+            <hr>
+            <p>Welcome to UNREAL, your gateway to the realms of science, horror, mystery, myths, and history. Our educational page offers a unique and engaging approach to learning, providing a diverse range of content that is both informative and entertaining. From the latest scientific breakthroughs to spine-tingling tales of horror and mystery, ancient myths and legends to the pivotal events and figures of history, UNREAL has it all. Join us as we journey through the unknown and explore the fascinating and mysterious world around us.</p>
+        </div>
+        <div class="section2">
+            <h2>Address</h2>
+            <hr>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">  Colombo,Srilanka</span>
+                </div>
+                <div class="tel">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text"> +94 778819814</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text"> unreal@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <h2>Contact Us</h2>
+            <hr>
+            <form action="#">
+                <div class="email">
+                    <div class="text">Email*</div>
+                    <input type="email" required>
+                </div>
+                <div class="msg">
+                    <div class="text">Message</div>
+                    <textarea cols="25" rows="2"></textarea>
+                </div>
+                <div class="btn">
+                    <button>Send</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+
+    
+</body>
+
+
+</html>    

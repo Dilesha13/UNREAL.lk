@@ -1,0 +1,189 @@
+body{
+  z-index: -1;
+  width: 100%;
+  
+  background-attachment: fixed;
+  background-image: url("../Images/student4images/sitemapbackground.png"); 
+  overflow-x: hidden; 
+}
+
+rect{
+    fill:white;
+    stroke: black;
+    stroke-width :3;   
+}
+
+line{
+  stroke: rgb(0, 0, 0);
+  stroke-width :3.5;   
+}
+
+text{
+    fill:blue;
+}
+
+path{
+    stroke-width:3;
+    stroke:black;
+}
+
+.gif{
+    height: auto;
+    width: 100%;
+    transform: translateY(-55%);
+    box-shadow: 10px 10px 10px 15px black;
+      
+}
+
+.site{
+    transform: translateY(-85%);
+    bottom: 0;
+}
+
+.homeicon{
+    stroke-width :5; 
+}
+
+#main text{
+    fill:white;
+}
+
+
+
+.hoverclass:hover text{
+  fill:#ff0000;
+}
+
+
+
+.logo{
+    float: left;
+    transform: translateX(-150px);
+  }
+
+  header{
+    z-index: 4;
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    align-items:center;
+    padding-top: 20px;
+    background-color: #030405;
+    position: fixed;
+    margin-bottom: 0px;
+    border-radius: 0px 0px 50px 50px;
+    width: 100%;
+    
+    transform: translateY(0%);
+    
+    top:0;
+    left: 0;
+    right:0;
+  }
+  .container li a{
+    text-decoration: none;
+    color: white;
+    border-style:double;
+    border-color: rgb(190, 190, 184);
+    border-radius: 50px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;  
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s;
+    transition-delay: 0.3s;
+  }
+  .container{
+    font-weight: bold;
+    list-style: none;
+    background-color: black;
+    margin: 0;
+    justify-content: center;
+    padding-right: 2cm;
+    display: flex;
+    position: sticky;
+    
+  }
+  .container li{
+    display: inline-block;
+    align-content: center;
+    padding: .2cm;
+    cursor: pointer;
+       
+  }
+  .container li a:hover{
+    font-weight: bold;
+    transform: scale(1.5);
+    color:black;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px yellow;
+    transform: translateZ(-10px);
+    
+  }
+  @keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+  }
+
+  .progress-container {
+    top:0;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 4;
+    transform: 100%;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: gold;
+    width: 0%;
+  }
+
+
+  .editor:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+  }
+  /*   Footer   */ 
+  
+  footer{
+    background-color:black;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    color: white;
+    
+  }
+  .section1, .section2, .section3{
+    flex-basis: 50%;
+    padding: 10px 20px;   
+  }
+  .section1 p{
+    margin-left: 10px;
+  }
+  .btn{
+    margin: 10px 10px 10px 10px;
+  }
+  .btn button{
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+  }
+  .email .text{
+    padding: 5px;
+  }
+  .msg{
+    margin-left: 9px;
+  }
+  .msg .text{
+    padding: 5px;
+  }
+  .place, .tel, .email{
+    padding: 10px;
+  }

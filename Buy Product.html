@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Buy Product.css">
+    <script  type="text/javascript" src="JS/Buy_Product.js" async></script>
+    
+</head>
+<body>
+  <header>
+    <img class="logo" src="Images/Logo_name.png" alt="UNREAL" height="90px" width="150px" style="margin-left: 5%; margin-top: 1%;">
+    <nav>
+        <ul class="container">
+          <li><a href="Main.html">Home</a></li>
+          <li><a href="imagegallery.html">Gallery</a></li>
+          <li><a href="quiz/index.html">Quiz</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="comments.html">Comments</a></li>
+          <li><a href="About_us/AboutUs.html">About Us</a></li>
+          <li><a href="#" onclick="product_cart()">cart</a></li>
+      </ul>
+    </nav>
+</header>
+
+
+
+<div class="row">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+
+  <svg width="1500" height="330" class="site">
+    <g>
+    <text x="280" y="190" font-size="100" class="text1">MARKET PLACE</text>
+    </g>
+</svg>
+  <!---------------------------------------------->
+
+  <div class="background1">
+    <!--Product 1, Project Shadow-->
+    <div class="product">
+        <span class="product-image">
+            <img src="Images/Buy_Product/Project Shadow.jpg" alt="Shadow" width="250px">
+        </span>
+
+        <span class="product-text">
+          <h2>Project Shadow</h2>
+          <p><b>Project Shadow</b> is a <b>Horror</b> and <b>myth</b> novel story colection. it's only, <br> Rs.1000</p>
+          <a class="price" >Rs.1000.00</a>
+        </span>
+        <button type="button" class="product-stats" onclick="product1()" id="cart1">Read More</button>
+        <!--<div class="product-stats" id="cart1" onclick="pro1()">
+          <span >Read More</span>
+        </div>-->
+    </div>
+    
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span  id="close1" class="close" onclick="close1()">&times;</span>
+        <div class="modal-header">
+          <h1>Project Shadow</h>
+        </div>
+        <div class="modal-body">
+          <span class="modal-image">
+            <img src="Images/Buy_Product/Project Shadow.jpg" alt="Shadow" width="60%" >
+          </span>
+          <p>Price: Rs.1000.00</p>
+        </div>
+        <div class="modal-footer">
+          <p><label for="quantity">Quantity: </label>
+          <input class="button" type="number" id="product1" name="PQuantity" min=0 ></p>
+        </div>
+        <div class="modal-bottem">
+          <span class="addcart" onclick="addtocart_1()">Add to Cart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------->
+  <div  class="background2">
+    
+    <!--Product 2,T-Shirt-->
+    <div class="product">
+      <span class="product-image">
+        <img src="Images/Buy_Product/T-shirt.webp" alt="Shadow" width="250px" height="190px">
+      </span>
+
+      <span class="product-text">
+        <br>
+          <h2>T-Shirt</h2>
+          <p>"Buy Now"<br>UNREAL T-shirt<br> only Rs.2000</p>
+        <a class="price" >Rs.2000.00</a>
+      </span>
+      <button type="button" class="product-stats" onclick="product2()" id="cart1">Read More</button>
+
+    </div>
+
+    <div id="myModal2" class="modal">
+
+      <div class="modal-content">
+        <span id="close2" class="close" onclick="close2()">&times;</span>
+        <div class="modal-header">
+          <h1>UNREAL T-Shirt</h>
+        </div>
+        <div class="modal-body">
+          <span class="modal-image">
+            <img src="Images/Buy_Product/T-shirt.webp" alt="Shadow" width="48%" height="10%">
+          </span>
+          <p>Price: Rs.2000.00</p>
+        </div>
+        <div class="modal-footer">
+          <p><label for="quantity">Quantity: </label>
+          <input class="button" type="number" id="product2" name="PQuantity" min=0 ></p>
+        </div>
+        <div class="modal-bottem">
+          <span class="addcart" onclick="addtocart_2()">Add to Cart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------->
+
+  <div  class="background3">
+    <!--Product 3,Hoodie-->
+    <div class="product">
+      <span class="product-image">
+        <img src="Images/Buy_Product/Hoodie.webp" alt="Shadow" width="250px" height="190px">
+      </span>
+
+      <span class="product-text">
+        <br>
+          <h2>Hoodie</h2>
+          <p>"Buy Now"<br>UNREAL Hoodie<br> only Rs.3000</p>
+        <a class="price" >Rs.3000.00</a>
+      </span>
+      <button type="button" class="product-stats" onclick="product3()" id="cart1">Read More</button>
+
+    </div>
+
+    <div id="myModal3" class="modal">
+
+      <div class="modal-content">
+        <span id="close3" class="close" onclick="close3()">&times;</span>
+        <div class="modal-header">
+          <h1>UNREAL Hoodie</h>
+        </div>
+        <div class="modal-body">
+          <span class="modal-image">
+            <img src="Images/Buy_Product/Hoodie.webp" alt="Shadow" width="48%" height="10%">
+          </span>
+          <p>Price: Rs.3000.00</p>
+        </div>
+        <div class="modal-footer">
+          <p><label for="quantity">Quantity: </label>
+          <input class="button" type="number" id="product3" name="PQuantity" min=0 ></p>
+        </div>
+        <div class="modal-bottem">
+          <span class="addcart" onclick="addtocart_3()" >Add to Cart</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!---------------------------------------------->  
+  <div class="background1">
+  <!--Product 4, Invisible Dimesion File-->
+  <div class="product">
+    <span class="product-image">
+        <img src="Images/Buy_Product/invisiblae.webp" alt="Shadow" width="250px">
+    </span>
+
+    <span class="product-text">
+      <h2>Invisible Dimesion</h2>
+      <p><b>Invisible Dimesion File</b> is a book, which is talk about universal dimensions. it's only, <br> Rs.1000</p>
+      <a class="price" >Rs.900.00</a>
+    </span>
+    <button type="button" class="product-stats" onclick="product4()" id="cart1">Read More</button>
+  </div>
+
+  <div id="myModal4" class="modal">
+
+    <div class="modal-content">
+      <span  id="close4" class="close" onclick="close4()">&times;</span>
+      <div class="modal-header">
+        <h1>Invisible Dimesion File</h>
+      </div>
+      <div class="modal-body">
+        <span class="modal-image">
+          <img src="Images/Buy_Product/invisiblae.webp" alt="Shadow" width="50%" >
+        </span>
+        <p>Price: Rs.900.00</p>
+      </div>
+      <div class="modal-footer">
+        <p><label for="quantity">Quantity: </label>
+        <input class="button" type="number" id="product4" name="PQuantity" min=0 ></p>
+      </div>
+      <div class="modal-bottem">
+        <span class="addcart" onclick="addtocart_4()">Add to Cart</span>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <!---------------------------------------------->
+  <div  class="background2">
+    <!--Product 5,Cap-->
+    <div class="product">
+      <span class="product-image">
+        <img src="Images/Buy_Product/Cap.webp" alt="Shadow" width="250px" height="190px">
+      </span>
+
+      <span class="product-text">
+        <br>
+          <h2>Cap</h2>
+          <p>Now you can buy<br>UNREAL CAP<br> only Rs.400</p>
+        <a class="price" >Rs.400.00</a>
+      </span>
+      <button type="button" class="product-stats" onclick="product5()" id="cart1">Read More</button>
+
+    </div>
+
+    <div id="myModal5" class="modal">
+
+      <div class="modal-content">
+        <span id="close5" class="close" onclick="close5()">&times;</span>
+        <div class="modal-header">
+          <h1>UNREAL Cap</h>
+        </div>
+        <div class="modal-body">
+          <span class="modal-image">
+            <img src="Images/Buy_Product/Cap.webp" alt="Shadow" width="48%" height="10%">
+          </span>
+          <p>Price: Rs.400.00</p>
+        </div>
+        <div class="modal-footer">
+          <p><label for="quantity">Quantity: </label>
+          <input class="button" type="number" id="product5" name="PQuantity" min=0 ></p>
+        </div>
+        <div class="modal-bottem">
+          <span class="addcart" onclick="addtocart_5()">Add to Cart</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!---------------------------------------------->  
+
+  <div  class="background3">
+    <!--Product 6,Watch-->
+    <div class="product">
+      <span class="product-image">
+        <img src="Images/Buy_Product/Watch.webp" alt="Shadow" width="250px" height="190px">
+      </span>
+
+      <span class="product-text">
+        <br>
+          <h2>Watch</h2>
+          <p>There is a promo sale,<br>UNREAL Watch<br>with 50% Discount, only Rs.3500</p>
+        <a class="price" >Rs.3500.00</a>
+      </span>
+      <button type="button" class="product-stats" onclick="product6()" id="cart1">Read More</button>
+
+    </div>
+
+    <div id="myModal6" class="modal">
+
+      <div class="modal-content">
+        <span id="close6" class="close" onclick="close6()">&times;</span>
+        <div class="modal-header">
+          <h1>UNREAL Watch</h>
+        </div>
+        <div class="modal-body">
+          <span class="modal-image">
+            <img src="Images/Buy_Product/Watch.webp" alt="Shadow" width="48%" height="10%">
+          </span>
+          <p>Price: Rs.3500.00</p>
+        </div>
+        <div class="modal-footer">
+          <p><label for="quantity">Quantity: </label>
+          <input class="button" type="number" id="product6" name="PQuantity" min=0 ></p>
+        </div>
+        <div class="modal-bottem">
+          <span class="addcart" onclick="addtocart_6()">Add to Cart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!-- Cart -->
+<div id="mycart" class="mycart">
+  <div class="modal-content">
+    <span id="close_cart" class="close" onclick="close_cart()">&times;</span>
+    <div class="modal-header">
+      <h2>Cart</h2>
+    </div>
+    <div class="modal-body">
+      <p id="cart_data1"></p>
+      <p id="cart_data2"></p>
+      <p id="cart_data3"></p>
+      <p id="cart_data4"></p>
+      <p id="cart_data5"></p>
+      <p id="cart_data6"></p>
+      <p>Total Price: <span id="total-price"></span></p>
+    </div>
+    
+    <div class="modal-bottem">
+      <a href="Buy_product_validat.html"><span class="addcart">Buy</span></a>
+    </div>
+  </div>
+</div>
+
+
+<p style="text-align: center; font-size: 30px;font-weight: bold;">
+  <a href="Editor pages/editors_1 .html" class="editor" style="text-decoration: none;padding: 5px; color: white;border: inset 5px red;border-radius: 10px;transition: 0.5s ease;">EDITOR</a></p>
+
+
+
+<footer id="footer">
+  <div class="section1">
+      <h2>About Us</h2>
+      <hr>
+      <p>Welcome to UNREAL, your gateway to the realms of science, horror, mystery, myths, and history. Our educational page offers a unique and engaging approach to learning, providing a diverse range of content that is both informative and entertaining. From the latest scientific breakthroughs to spine-tingling tales of horror and mystery, ancient myths and legends to the pivotal events and figures of history, UNREAL has it all. Join us as we journey through the unknown and explore the fascinating and mysterious world around us.</p>
+  </div>
+  <div class="section2">
+      <h2>Address</h2>
+      <hr>
+      <div class="content">
+          <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">  Colombo,Srilanka</span>
+          </div>
+          <div class="tel">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text"> +94 778819814</span>
+          </div>
+          <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text"> unreal@gmail.com</span>
+          </div>
+      </div>
+  </div>
+  <div class="section3">
+      <h2>Contact Us</h2>
+      <hr>
+      <form action="#">
+          <div class="email">
+              <div class="text">Email*</div>
+              <input type="email" required>
+          </div>
+          <div class="msg">
+              <div class="text">Message</div>
+              <textarea cols="25" rows="2"></textarea>
+          </div>
+          <div class="btn">
+              <button>Send</button>
+          </div>
+      </form>
+  </div>
+</footer>
+ 
+</body>
+</html>
+<!-- -->
+

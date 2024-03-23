@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+    transition: .5s all;
+}
+body{
+    flex-wrap: wrap;
+    background-image: url("1.png");
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.logo{
+    float: left;
+    transform: translateX(-130px);
+  }
+
+header{
+    z-index: 4;
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    align-items:center;
+    padding: 0;
+    background-color: #030405;
+    position: fixed;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 50px 50px;
+    width: 100%;
+    
+    top:0;
+    left: 0;
+    right:0;
+  }
+  .containers li a{
+    text-decoration: none;
+    color: white;
+    border-style:double;
+    border-color: rgb(190, 190, 184);
+    border-radius: 50px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;  
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s;
+    transition-delay: 0.3s;
+  }
+  .containers{
+    font-weight: bold;
+    list-style: none;
+    background-color: black;
+    margin: 0;
+    justify-content: center;
+    padding-right: 2cm;
+    display: flex;
+    position: sticky;
+    
+  }
+  .containers li{
+    display: inline-block;
+    align-content: center;
+    padding: .2cm;
+    cursor: pointer;
+       
+  }
+  .containers li a:hover{
+    font-weight: bold;
+    transform: scale(1.5);
+    color:black;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px yellow;
+    transform: translateZ(-10px);
+    
+  }
+  @keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+  }
+
+
+.row{
+    margin-top: 10%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+.container .card{
+    border-radius: 30px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    transition: 0.5s;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(45deg,black, #525f6e, #fbfbfb );
+    box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+}
+.container:hover .card{
+    box-shadow:  5px 5px 80px rgba(255, 255, 255, 0.9);
+}
+.container .card img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+.container .card:hover img{
+    left:73%;
+    height: 500px;
+}
+.container .card .content{
+    position: relative;
+    width: 50%;
+    left: 20% ;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+   
+}
+.socialIcons ul{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+  }
+.socialIcons ul .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1f7a7a;
+    color: #eee;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    pointer-events: none;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    transition: opacity .5s .75s ease-out;
+}
+.socialIcons ul:hover .text{
+    opacity: 0;
+    transition: opacity .5s .125s ease-out;
+}
+.socialIcons ul li{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: #1f7a7a;
+    text-align: center;
+    line-height: 55px;
+    margin: 0 -16px;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: background-color .5s ease-out,
+                border-radius .5s .25s ease-out,
+                margin .5s .25s ease-out;
+}
+.socialIcons ul li:hover{
+    background: #1a6565;
+}
+.socialIcons ul li i{
+    color: #eee;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 1.7s;
+}
+.socialIcons ul:hover li i{
+    opacity: 1;
+}
+.socialIcons ul li:nth-child(1){
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.socialIcons ul li:nth-child(5){
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.socialIcons ul:hover li{
+    border-radius: 50px;
+    margin: 0 3px;
+}
+.container .card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.container .card .content h2{
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+}
+.container .card .content p{
+    color: #cccccc;
+}
+.container .card .content a{
+    position: relative;
+    color: rgb(0, 0, 0);
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+@media(max-width:991px){
+    .container .card{
+        width: auto;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+    r .card:hover{
+        height: 600px;
+    }
+    .container .card:hover img{
+        left: 50%;
+        height: 350px;
+    }
+    .container .card.content{
+        width: 100%;
+        left:0 ;
+        padding: 40px;
+    }
+}
+
+
+@media(max-width:767px){ 
+    .container {
+        flex-direction: column;
+    }
+    .container .card{
+        margin: 40px 20px;
+    }
+}
+@media(max-width:420px){ 
+    .container .card .content{  
+        padding: 30px;
+    } 
+    .container .card:hover img{
+        height: 300px;
+    }
+}
+
+
+
+
+.editor:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+  }
+  /*   Footer   */ 
+  
+  footer{
+    background-color:black;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    color: white;
+    
+  }
+  .section1, .section2, .section3{
+    flex-basis: 50%;
+    padding: 10px 20px;   
+  }
+  .section1 p{
+    margin-left: 10px;
+  }
+  .btn{
+    margin: 10px 10px 10px 10px;
+  }
+  .btn button{
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+  }
+  .email .text{
+    padding: 5px;
+  }
+  .msg{
+    margin-left: 9px;
+  }
+  .msg .text{
+    padding: 5px;
+  }
+  .place, .tel, .email{
+    padding: 10px;
+  }
+
+

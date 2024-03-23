@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url("../Images/Bagckground/Background_blue.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.logo{
+  float: left;
+  transform: translateX(-150px);
+}
+header{
+  z-index: 4;
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+  align-items:center;
+  padding: 0;
+  background-color: #030405;
+  position: fixed;
+  margin-bottom: 10px;
+  border-radius: 0px 0px 50px 50px;
+  width: 100%;
+  
+  top:0;
+  left: 0;
+  right:0;
+}
+.container li a{
+  text-decoration: none;
+  color: white;
+  border-style:double;
+  border-color: rgb(190, 190, 184);
+  border-radius: 50px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;  
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s;
+  transition-delay: 0.3s;
+}
+.container{
+  font-weight: bold;
+  list-style: none;
+  background-color: black;
+  margin: 0;
+  justify-content: center;
+  padding-right: 2cm;
+  display: flex;
+  position: sticky;
+  
+}
+.container li{
+  display: inline-block;
+  align-content: center;
+  padding: .2cm;
+  cursor: pointer;
+     
+}
+.container li a:hover{
+  font-weight: bold;
+  transform: scale(1.5);
+  color:black;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px yellow;
+  transform: translateZ(-10px);
+  
+}
+@keyframes slideInLeft{
+  from{
+      transform: translateX(-300px);
+  }
+  to{
+      transform: translateX(0);
+  }
+}
+.progress-container {
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 4;
+    transform: 100%;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: gold;
+    width: 0%;
+  }
+/*---------------------------*/
+
+.containers{
+    width: 640px;
+    background-color: #fff;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    min-height: 350px;
+    padding: 80px 90px;
+    border-radius: 50px;
+    margin-left: 25%;
+    margin-top: 13%;
+    margin-bottom: 8%;
+    display: flex;
+}
+.leftside,.rightside{
+    width: 50%;
+}
+.leftside img{
+    height: 300px;
+    width: 200px;
+}
+.rightside h1{
+    color: #1da3dd;
+    font-size: 29px;
+}
+.rightside h2{
+    color: #444;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.rightside ul{
+    color: #444;
+    font-size: 18px;
+    margin-top:5px ;
+    font-weight: 600;
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-top: 10px;
+}
+.rightside ul{
+    margin-top: 5px;
+}
+.rightside a{
+    background-color: #1da3dd;
+    border-radius: 100px;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 25px;
+    text-decoration: none;
+    outline: #444;
+}
+/*Question page css start*/
+
+.box{
+    margin-top: 10%;
+    margin-left: 27%;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+    min-height: 350px;
+    width:640px;
+    padding: 50px;
+}
+.title{
+    border-bottom: 1px solid #464646;
+    color: #464646;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.scoreBox,
+.timerBox{
+    border-radius:100px;
+    padding: 10px 15px;
+    border: 1px solid #444;
+    color: #444;
+}
+.questionBox{
+    background-color: #594076;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.optionBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    grid-gap:15px;
+    
+}
+.optionBox span{
+    background-color: #ccc;
+    border-radius: 10px;
+    color: #444;
+    border: 1px solid #444;
+    padding: 10px 15px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer button{
+    background-color: #1da3dd;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+}
+.resultBox{
+    margin-bottom: 30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap:15px;
+    font-size: 20px;
+}
+.resultBox *:nth-child(odd){
+    text-align: right;
+}
+.resultBox span{
+    font-weight: 600;
+}
+.buttonBox{
+    border-top: 1px solid #444;
+    text-align: center;
+}
+.buttonBox a{
+    background-color: #1da3dd;
+    border-radius: 50px;
+    border: 0;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.optionBox span.right{
+        background-color: #00ab00;
+        border-color: #00ab00;
+        color:#fff;
+}
+.optionBox span.wrong{
+    background-color: #ff3b0e;
+    border-color: #ff3b0e;
+    color:#fff;
+}
+/*Question page css end*/
+
+/*media query start*/
+
+@media screen and (max-width:768px){
+    .leftside{
+        display: inline;
+    }
+    .container,
+    .box{
+        width: 425px;
+    }
+    .rightside{
+        width: 100%;
+    }
+    .optionBox{
+        grid-template-columns: 1fr;
+    }
+}
+/*media query end*/
+
+
+
+.editor:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+  }
+  /*   Footer   */ 
+  
+  footer{
+    margin-top: 5%;
+    background-color:black;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    color: white;
+    
+  }
+  .section1, .section2, .section3{
+    flex-basis: 50%;
+    padding: 10px 20px;   
+  }
+  .section1 p{
+    margin-left: 10px;
+  }
+  .btn{
+    margin: 10px 10px 10px 10px;
+  }
+  .btn button{
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+  }
+  .email .text{
+    padding: 5px;
+  }
+  .msg{
+    margin-left: 9px;
+  }
+  .msg .text{
+    padding: 5px;
+  }
+  .place, .tel, .email{
+    padding: 10px;
+  }

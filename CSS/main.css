@@ -1,0 +1,354 @@
+body{
+    background-image: url("../Images/Bagckground/Background_blue.webp");
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 100%;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    z-index: -1;
+}
+.logo{
+    float: left;
+    transform: translateX(-130px);
+}
+header{
+    z-index: 4;
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    align-items:center;
+    padding: 0;
+    background-color: #030405;
+    position: fixed;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 50px 50px;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+.progress-container {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 4;
+    transform: 100%;
+    background: #ccc;
+}
+  
+.progress-bar {
+    height: 8px;
+    background: gold;
+    width: 0%;
+}
+.container li a{
+    text-decoration: none;
+    color: white;
+    border-style:solid;
+    border-color:rgb(190, 190, 184) ;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;  
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s;
+    transition-delay: 0.3s;
+}
+.container li a{
+    text-decoration: none;
+    color: white;
+    border-style:double;
+    border-color: rgb(190, 190, 184);
+    border-radius: 50px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;  
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s;
+    transition-delay: 0.3s;
+  }
+  .container{
+    font-weight: bold;
+    list-style: none;
+    background-color: black;
+    margin: 0;
+    justify-content: center;
+    padding-right: 2cm;
+    display: flex;
+    position: sticky;
+    
+  }
+  .container li{
+    display: inline-block;
+    align-content: center;
+    padding: .2cm;
+    cursor: pointer;
+        
+  }
+  .container li a:hover{
+    font-weight: bold;
+    transform: scale(1.5);
+    color:black;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px yellow;
+    transform: translateZ(-10px);
+    
+  }
+  @keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+  }
+.welcome, .unreal{
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.front{
+    font-size: 200%;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: solid black 1px;
+}
+.welcome{
+    margin: 0;
+    font-size: 32px;  
+}
+.unreal{
+    margin: 0;  
+}
+.line{
+    width: 7cm;
+    background-color: #030405;
+    height: 3px;
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.image{
+    height: 400px;
+    width: 400px;
+    color: aqua;
+    align-items: center;
+}
+.about{
+    width: fit-content;
+    border: solid black;
+    background-color: rgb(196, 215, 233);
+}
+#logo2{
+    align-content: center;
+    display:inline-block;
+    justify-content: center;
+    margin-top: 3cm;
+}
+.about{
+    display:block;
+    height: auto;
+    border: none;  
+}
+.p1{
+    font-size:200%;
+    margin: 0%;
+    width: 100%;
+    justify-content: center;
+    height:auto;
+}
+.container2{
+    text-align: center;
+    height: auto;
+    width: fit-content;
+    justify-content: center;
+    margin: 0;
+    width:100%;
+    padding-bottom: 10px;
+    font-size: 200%;
+    font-kerning: auto;
+    padding-top: 10px;
+    background-color: rgb(89, 79, 239);
+}
+.container3{
+    height: 2cm;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+}
+.container3 h2{
+    padding: 20px;
+}
+.container4{
+    height: 2cm;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+}
+.container4 h2{
+    padding: 20px;
+}
+.otherarticles{
+    justify-content: center;
+    height: 400px;
+    
+}
+.otherarticles li{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    align-content: center;
+    margin-left: 45%;
+    margin-top: 30px;
+    
+}
+#bestarticles1{
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.science{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: hidden;
+    margin: 20px;
+    padding: 10px;
+    margin-left: 250px;
+    box-shadow: 3px 3px 2px black;
+}
+.horror{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: hidden;
+    margin: 20px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    padding: 10px;
+    box-shadow: 3px 3px 2px black;
+}
+.astronomy{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: hidden;
+    margin: 20px;
+    padding: 10px;
+    margin-left: 250px;
+    margin-top: 100px;
+    box-shadow: 3px 3px 2px black;
+}
+.history{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: hidden;
+    margin: 20px;
+    padding: 10px;
+    margin-left: 80px;
+    margin-top: 100px;
+    box-shadow:  3px 3px 2px black;
+}
+.horror img{
+    border-radius: 20px;
+}
+.science img{
+    border-radius: 20px;
+}
+.astronomy img{
+    border-radius: 20px;
+}
+.history img{
+    border-radius: 20px;
+}
+#bestarticles2{
+    display: flex;
+    margin-bottom: 50px;
+}
+ .horror button,.science button{
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    border: hidden;
+    margin-left: 30%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+}
+.astronomy button, .history button{
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    border: hidden;
+    margin-left: 30%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+
+.editor:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+  }
+
+
+
+footer{
+    background-color:black;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    color: white;
+    bottom: 0;
+}
+.section1, .section2, .section3{
+    flex-basis: 50%;
+    padding: 10px 20px;   
+}
+.section1 p{
+    margin-left: 10px;
+}
+.btn{
+    margin: 10px 10px 10px 10px;
+}
+.btn button{
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+.email .text{
+    padding: 5px;
+}
+.msg{
+    margin-left: 9px;
+}
+.msg .text{
+    padding: 5px;
+}
+.place, .tel, .email{
+    padding: 10px;
+}

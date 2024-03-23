@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comments</title>
+    <link rel="stylesheet" href="CSS/comments.css">
+    <script type="text/javascript" src="JS/comment.js"async></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Images/Logo_name.png" alt="UNREAL" height="90px" width="150px" style="margin-left: 5%; margin-top: 1%;">
+        <nav>
+            <ul class="container">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="imagegallery.html">Gallery</a></li>
+                <li><a href="quiz/index.html">Quiz</a></li>
+                <li><a href="Buy Product.html">Product</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="#">Comments</a></li>
+                <li><a href="About_us/AboutUs.html">About Us</a></li>
+                <li><a href="Buy Product.html" onclick="product_cart()">cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    <form>
+    <div class="center">
+        <p>Your rating for the page</p>
+      <div class="stars">
+        <input type="radio" id="five" name="rate" value="5">
+        <label for="five"></label>
+        <input type="radio" id="four" name="rate" value="4">
+        <label for="four"></label>
+        <input type="radio" id="three" name="rate" value="3">
+        <label for="three"></label>
+        <input type="radio" id="two" name="rate" value="2">
+        <label for="two"></label>
+        <input type="radio" id="one" name="rate" value="1">
+        <label for="one"></label>
+        <span class="result"></span>
+      </div>
+    </div>
+    <div class="exp">
+        <label for="experience">Let us know what you like about the page</label><br>
+        <div class="buttons">
+            <input type="button" name="easy" id="easy"  value="It's easy to use">
+            <input type="button" name="reliable" id="reliable"  value="It's reliable"><br>
+            <input type="button" name="look" id="look" value="I like how it looks">
+            <input type="button" name="other" id="other" value="other">
+        </div>
+    </div>
+    <div class="hear">
+        <label for="hearabout">Where did you first hear about us</label><br>
+        <div class="popup">
+            <select name="From" id="from" placeholder="Enter the place">  
+                <option value="School">School</option>
+                <option value="University">University</option>
+                <option value="Social media">Social media</option>
+                <option value="Any education website">Any education site</option>
+                <option value="others">Others</option>
+            </select>  
+        </div>    
+    </div>
+    <div class="better">
+        <label for="suggestion">How can we make the page better *</label><br>
+        <div class="text">
+            <input type="text" name="Text" id="text"  placeholder="Your suggestion"required>
+        </div>
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="Submit" onclick="openpopup()" id="sub">
+    </div>
+</form>
+
+<p id="editor">
+    <a href="Editor pages/editors_2.html" class="editor" style="text-decoration: none;padding: 5px; color: white;border: inset 5px red;border-radius: 10px;transition: 0.5s ease;">EDITOR</a></p>
+  
+
+
+
+<footer>
+    <div class="section1">
+        <h2>About Us</h2>
+        <hr>
+        <p>Welcome to UNREAL, your gateway to the realms of science, horror, mystery, myths, and history. Our educational page offers a unique and engaging approach to learning, providing a diverse range of content that is both informative and entertaining. From the latest scientific breakthroughs to spine-tingling tales of horror and mystery, ancient myths and legends to the pivotal events and figures of history, UNREAL has it all. Join us as we journey through the unknown and explore the fascinating and mysterious world around us.</p>
+    </div>
+    <div class="section2">
+        <h2>Address</h2>
+        <hr>
+        <div class="content">
+            <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">  Colombo,Srilanka</span>
+            </div>
+            <div class="tel">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text"> +94 778819814</span>
+            </div>
+            <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text"> unreal@gmail.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <h2>Contact Us</h2>
+        <hr>
+        <form action="#">
+            <div class="email">
+                <div class="text">Email*</div>
+                <input type="email" required>
+            </div>
+            <div class="msg">
+                <div class="text">Message</div>
+                <textarea cols="25" rows="2"></textarea>
+            </div>
+            <div class="btn">
+                <button>Send</button>
+            </div>
+        </form>
+    </div>
+</footer>
+</body>
+</html>
